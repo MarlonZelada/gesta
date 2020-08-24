@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".Buscar"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/colorFondoVerde">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gesta_logo"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnLimpiarCampos"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/boton_guardar_cambios"
+
+                android:src="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350px"
+            android:layout_height="match_parent"
+            ></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--Layout con el Boton "Cerrar Sesion"-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:text="Cerrar Sesion"
+                    android:background="@drawable/boton_cancelar_cambios"
+                    android:id="@+id/btnCerrarSesion"
+                    android:src="@android:drawable/ic_lock_power_off" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"></LinearLayout>
+    <!--Layout Buscar cuenta-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal">
+        <!--Layout Ingresar No. de Cuenta-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/edtCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Numero de Cuenta"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:textColorHint="@color/colorFondoVerde"
+                android:textColor="@color/colorNegro"
+                android:gravity="center"/>
+        </LinearLayout>
+        <!--Layout Boton Buscar-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btnBuscar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/icono_buscar"
+                android:background="@drawable/caja_redonda"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"></LinearLayout>
+    <!--Layout Mostrar Datos Cliente-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Layout Mostrar Nombre Cliente-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Layout Mostrar Etiqueta "Nombre"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cliente: "
+                    android:textSize="15sp"
+                    android:textColor="@color/colorNegro"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--Layout Mostrar Etiqueta con el Resultado del "Nombre"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtVerNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorNegro"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--Layout Mostrar Estado Tarjeta-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!--Layout Mostrar Etiqueta "Estado"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado: "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNegro"/>
+            </LinearLayout>
+            <!--Layout Mostrar Etiqueta con el Resultado del "Estado"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txtVerEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorNegro"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--Layout Mostrar Tipo de Tarjeta-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Layout Mostrar Etiqueta "Tipo de Tarjeta"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Tarjeta: "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNegro"/>
+            </LinearLayout>
+            <!--Layout Mostrar Etiqueta con el Resultado del "Tipo de Tarjeta"-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txtVerTipoTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorNegro"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.01"/>
+
+    <!--Layout para mostrar los Comentarios de las Cuentas-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--Layout con la etiqueta de los "Comentarios"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:background="@color/colorComentarioVerde">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/etiqueComentarios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Comentarios"
+                android:textColor="@color/colorBlanco"
+                android:textSize="30dp" />
+        </LinearLayout>
+        <!--Layout para mostrar la lista de "Comentarios"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50">
+            <ListView
+                android:id="@+id/listaComentarios"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.54"
+                ></ListView>
+        </LinearLayout>
+    </LinearLayout>
+    <!--Layout con el Boton "Modificar"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.39">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+            <ImageButton
+                android:id="@+id/btnModificar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icono_editar"
+                android:background="@color/colorBlanco"
+                android:visibility="invisible"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.39"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

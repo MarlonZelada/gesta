@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorGuardar">#B2D090</color>
+    <color name="colorCancelar">#E6AF64</color>
+    <color name="colorCerrarSesion">#DEDEB1</color>
+    <color name="colorBuscar_Modificar">#B1DED7</color>
+    <color name="colorBlanco">#FFFFFF</color>
+    <color name="colorAsitencia">#4FB251</color>
+    <color name="colorFondoVerde">#15442A</color>
+    <color name="colorComentarioVerde">#198D69</color>
+    <color name="colorNegro">#000000</color>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">GesTa</string>
+
+    <string name="nodo_discos">discos</string>
+    <string name="campo_anyo">anyo</string>
+    <string name="campo_titulo">titulo</string>
+
+
+    <string name="nodo_no_cuenta">no_cuenta</string>
+    <string name="campo_cuenta">cuenta</string>
+    <string name="nodo_cliente">cliente</string>
+    <string name="campo_cliente">cliente</string>
+    <string name="nodo_estado">estado</string>
+    <string name="nodo_comentario">comentario</string>
+
+
+    <string name="campo_comentario">comentarios</string>
+    <string name="title_activity_modificar_cliente">ModificarCliente</string>
+
+
+    <string-array name="estados_tarjetas">
+        <item>Nuevo Estado</item>
+        <item>Ensobretado</item>
+        <item>TC en transito (Courrier)</item>
+        <item>TC Recibida por Asesor</item>
+        <item>TC Vendida</item>
+        <item>Cliente no la Quiere (Cancelar)</item>
+        <item>Cliente dio Cita</item>
+        <item>Cliente Ilocalizable</item>
+        <item>Envío de expediente por Asesor</item>
+        <item>Expediente Recibido por Coordinador</item>
+        <item>Translado de expediente a ABD</item>
+        <item>Dev. ABD</item>
+        <item>Transladado a Créditos</item>
+        <item>Dev. Créditos</item>
+        <item>Rechazo Creditos</item>
+        <item>Traslado a Call</item>
+        <item>Cliente no Confirma Datos</item>
+        <item>Activa</item>
+    </string-array>
+    <string name="preservation_prompt">Seleccionar</string>
+
+
+    <string name="title_activity_login">Login</string>
+
+
+</resources>

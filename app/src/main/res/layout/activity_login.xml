@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <!--Layout para el Titulo "GesTa"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gesta_logo">
+
+        </ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa a tu Cuenta"
+            android:textColor="@color/colorBlanco"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <!--Layout para los Campos "Usuario" y "Password"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:orientation="vertical">
+        <!--Layout para ingresar "Usuario"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:hint="Usuario"
+                android:textColorHint="@color/colorAsitencia"
+                android:textColor="@color/colorNegro"
+
+                android:background="@drawable/caja_redonda"
+
+                android:id="@+id/edtUsuario"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+        </LinearLayout>
+        <!--Layout para ingresar "Password"-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:hint="Password"
+                android:textColorHint="@color/colorAsitencia"
+                android:textColor="@color/colorNegro"
+
+                android:background="@drawable/caja_redonda"
+                android:id="@+id/edtPassword"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--Layout para el RadioButton "No cerrar Sesion"-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantener Sesión Iniciada"
+            android:textColor="@color/colorBlanco"
+
+            android:id="@+id/radioGuardar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp">
+
+    </LinearLayout>
+
+    <!--Layout para el Boton "Ingresar"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="ingresar"
+            android:background="@drawable/boton_ingresar_login"
+
+            android:id="@+id/btnIngresar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        ></LinearLayout>
+    <!--Layout con mensaje si se olvidan datos de Sesion-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="En caso de olvidar el Usuario o la Contraseña ponerse en contacto con el Administrador"
+            android:textSize="18dp"
+            android:textColor="@color/colorAsitencia"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

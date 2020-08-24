@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "337141662455",
+    "firebase_url": "https://fgesta-14a62.firebaseio.com",
+    "project_id": "fgesta-14a62",
+    "storage_bucket": "fgesta-14a62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337141662455:android:a36af93eb49725a97b49f2",
+        "android_client_info": {
+          "package_name": "com.mayatech.gesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337141662455-p2bvlpp5goe7gvv15gjn51oq6egheunq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayatech.gesta",
+            "certificate_hash": "bb2d5cb9976096354d6ba75bc21de722f070f64a"
+          }
+        },
+        {
+          "client_id": "337141662455-4ho5a5ig32hia7lbh4db0ajh7s0nh259.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdmWbTc1sdDwt8vKaV_xQW-YbAoR68K00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337141662455-4ho5a5ig32hia7lbh4db0ajh7s0nh259.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
